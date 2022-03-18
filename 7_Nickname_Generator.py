@@ -1,5 +1,7 @@
 def nickname_generator(name):
-    if name[2] in "aeiou":
+    if len(name) <= 3:
+        return "Error: Name too short"
+    elif name[2] in "aeiou":
         return name[0:4]
     else:
         return name[0:3]
